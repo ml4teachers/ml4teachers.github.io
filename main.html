@@ -1,0 +1,48 @@
+<style>
+html{
+}
+body{
+  padding:0;
+  margin:0;
+  height:100%;
+}
+
+#container{
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0%;
+  left:0%;
+}
+
+.box{
+  width:4%;
+  position:absolute;
+
+}
+.box img{
+  border-radius:3px;
+  box-shadow:2px 2px 5px rgba(0,0,0,0.2);
+  height:100%;
+  width:100%;
+}
+
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.0/Draggable.min.js"></script>
+<div id="container">
+  <div style="position:absolute;display:flex;flex-wrap:wrap;width:50%;height:100%;left:50%;top:0">
+  </div>
+
+
+  <div class="box" style="left:12%;top:15%"><img src="https://lh5.googleusercontent.com/qHQYPaPfa4mhld0wVxDncSKNaUoKPayCJjTTcboxcZAEbyUEhkQoWaotOlTRTFqHa8BqsoSGqEIUaPH8paOwMo2vqP4CTdBPDWGWRFfEu6EmuDAaJw-RhKClHznDrEJnacFpwE5fXMGHX15cSMqSJGMohhQYzU1CrCPi70djkXlVesnK-N-LFQ=w1280"/></div>
+  <div class="box" style="left:24%;top:15%"><img src="https://lh5.googleusercontent.com/qHQYPaPfa4mhld0wVxDncSKNaUoKPayCJjTTcboxcZAEbyUEhkQoWaotOlTRTFqHa8BqsoSGqEIUaPH8paOwMo2vqP4CTdBPDWGWRFfEu6EmuDAaJw-RhKClHznDrEJnacFpwE5fXMGHX15cSMqSJGMohhQYzU1CrCPi70djkXlVesnK-N-LFQ=w1280"/></div>
+    <div class="box" style="left:36%;top:15%"><img src="https://lh5.googleusercontent.com/qHQYPaPfa4mhld0wVxDncSKNaUoKPayCJjTTcboxcZAEbyUEhkQoWaotOlTRTFqHa8BqsoSGqEIUaPH8paOwMo2vqP4CTdBPDWGWRFfEu6EmuDAaJw-RhKClHznDrEJnacFpwE5fXMGHX15cSMqSJGMohhQYzU1CrCPi70djkXlVesnK-N-LFQ=w1280"/></div>
+  
+</div>
+
+<script>
+
+Draggable.create(".box", {type:"y", edgeResistance:0, bounds:"#container"});
+
+</script>
